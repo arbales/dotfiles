@@ -1,4 +1,4 @@
-# holman did thes dotfiles and i'm changing them.
+# holman did these dotfiles and i'm changing them.
 
 ## dotfiles
 
