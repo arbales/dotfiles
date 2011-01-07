@@ -1,4 +1,4 @@
-# holman does dotfiles
+# holman did thes dotfiles and i'm changing them.
 
 ## dotfiles
 
@@ -13,7 +13,7 @@ up into the main areas I used (Ruby, git, system libraries, and so on), so I
 structured the project accordingly.
 
 If you're interested in the philosophy behind why projects like these are
-awesome, you might want to [read my post on the
+awesome, you might want to [read his post on the
 subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
 ## install
@@ -76,7 +76,7 @@ dependency, but if you make it happen, THEY'LL MAKE **YOU** HAPPEN.
 
 ## thanks
 
-I forked [Ryan Bates](http://github.com/ryanb)' excellent
+@holman forked [Ryan Bates](http://github.com/ryanb)' excellent
 [dotfiles](http://github.com/ryanb/dotfiles) for a couple years before the
 weight of my changes and tweaks inspired me to finally roll my own. But Ryan's
 dotfiles were an easy way to get into bash customization, and then to jump ship
