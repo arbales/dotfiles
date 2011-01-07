@@ -1,5 +1,5 @@
 alias r='rvm use 1.8.7'
-
+alias u='unicorn'
 alias f='RAILS_ENV=fi'
 
 alias sc='script/console'
