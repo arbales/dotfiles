@@ -8,7 +8,7 @@
 
 [user]
         name = Austin Bales
-        email = austin@odopod.com
+        email = austin@manymoon.com
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
@@ -26,6 +26,6 @@
         whitespace = nowarn
 [github]
         user = arbales
-        token = 807d39718c539f9e2eafdeb838083a5f      	
+        token = 705f4fcb19ba0ee63e181300f1deb7d6G      	
 [mergetool]
         keepBackup = false
