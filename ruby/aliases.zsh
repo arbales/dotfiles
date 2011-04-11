@@ -1,4 +1,4 @@
-alias r='rvm use 1.8.7'
+alias r='rvm use 1.9.2'
 alias u='unicorn'
 alias f='RAILS_ENV=fi'
 
