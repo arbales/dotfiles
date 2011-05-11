@@ -46,7 +46,7 @@ need_push () {
   then
     echo " "
   else
-    echo "with %{$fg_bold[magenta]%}unpushed%{$reset_color%}"
+    echo " with %{$fg_bold[magenta]%}unpushed%{$reset_color%} "
   fi
 }
 
@@ -59,15 +59,35 @@ rvm_prompt(){
   fi
 }
 
+# This keeps the number of todos always available the right hand side of my
+# command line. I filter it to only count those tagged as "+next", so it's more
+# of a motivation to clear out the list.
+todo(){
+  if $(which todo.sh &> /dev/null)
+  then
+    num=$(echo $(todo.sh ls +next | wc -l))
+    let todos=num-2
+    if [ $todos != 0 ]
+    then
+      echo "$todos"
+    else
+      echo ""
+    fi
+  else
+    echo ""
+  fi
+}
+
 directory_name(){
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rvm_prompt) in $(directory_name) $(project_name_color)$(git_dirty) $(need_push)\n› '
+export PROMPT=$'\n$(rvm_prompt) in $(directory_name) $(project_name_color)$(git_dirty)$(need_push)\n› '
 set_prompt () {
-  export RPROMPT=""
+  export RPROMPT="%{$fg_bold[grey]%}$(todo)%{$reset_color%}"
 }
 
 precmd() {
+  title "zsh" "%m" "%55<...<%~"
   set_prompt
 }
