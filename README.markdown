@@ -18,7 +18,7 @@ subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
 ## install
 
-- `git clone git://github.com/holman/dotfiles ~/.dotfiles`
+- `git clone git://github.com/arbales/dotfiles ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `rake install`
 
@@ -75,6 +75,8 @@ dependency, but if you make it happen, THEY'LL MAKE **YOU** HAPPEN.
   multiple rubies, your current branch will show up in the prompt. Bonus.
 
 ## thanks
+
+@arbales forked [Zach Holman](http://github.com/holman)'s excellent dotfiles.
 
 @holman forked [Ryan Bates](http://github.com/ryanb)' excellent
 [dotfiles](http://github.com/ryanb/dotfiles) for a couple years before the
