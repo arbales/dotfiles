@@ -8,9 +8,10 @@
 
 [user]
         name = Austin Bales
-        email = your@example.com
+        email = austin@417east.com
 [alias]
         co = checkout
+        tidy = !$ZSH/bin/git-cleanup-merged-branches
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributers = !$ZSH/bin/git-rank-contributers
@@ -22,9 +23,11 @@
 [core]
         excludesfile = ~/.gitignore
         editor = mate -w
+        whitespace = trailing-space,space-before-tab
 [apply]
-        whitespace = nowarn
+        whitespace = fix
 [github]
-        user = holman
+        user = arbales
+        token = abcefghijklmnopqrstuvqxyz0123456
 [mergetool]
         keepBackup = false
