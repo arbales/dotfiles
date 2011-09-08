@@ -35,10 +35,9 @@ symlinked without extension into `$HOME` when you run `rake install`.
 
 ## what's inside
 
-A lot of what's inside is just aliases: `gs` for `git status`, `gl` for `git
-pull --rebase --prune`, for example. You can browse the `aliases.zsh` files in
-each topic directory. There's also a collection of scripts in `bin` you can
-browse. A few notable ones:
+A lot of stuff. Seriously, a lot of stuff. Check them out in the file browser
+above and see what components may mesh up with you. Fork it, remove what you
+don't use, and build on what you do use.
 
 ###system
 - `c` is an autocomplete shortcut to your Workspace. For example, `c
@@ -56,9 +55,27 @@ browse. A few notable ones:
 ###fun
 - `cloudapp` uploads any file to [CloudApp](http://getcloudapp.com).
 
-##moar custom
+
+## components
+
+There's a few special files in the hierarchy.
+
+- **bin/\* **: Anything in `bin/` will get added to your `$PATH` and be made
+  available everywhere.
+- **topic/\*.zsh**: Any files ending in `.zsh` get loaded into your
+  environment.
+- **topic/\*.symlink**: Any files ending in `*.symlink` get symlinked into
+  your `$HOME`. This is so you can keep all of those versioned in your dotfiles
+  but still keep those autoloaded files in your home directory. These get
+  symlinked in when you run `rake install`.
+- **topic/\*.completion.sh**: Any files ending in `completion.sh` get loaded
+  last so that they get loaded after we set up zsh autocomplete functions.
+
+## add-ons
+
 There are a few things I use to make my life awesome. They're not a required
-dependency, but if you make it happen, THEY'LL MAKE **YOU** HAPPEN.
+dependency, but if you install them they'll make your life a bit more like a
+bubble bath.
 
 - If you want some more colors for things like `ls`, install grc: `brew install
   grc`.
