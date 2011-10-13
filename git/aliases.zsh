@@ -8,7 +8,8 @@
 # I'm hardcoding it to an installed rvm (using rvm's `rvm 1.8.7,ruby /hub/path`
 # syntax is way too slow). It should work fine for those without rvm, though.
 
-alias git='$HOME/.rvm/rubies/ruby-1.9.2-p180/bin/ruby `which hub`'
+# alias git='$HOME/.rvm/rubies/ruby-1.9.2-p180/bin/ruby `which hub`'
+function git(){~/bin/hub $@}
 
 # The rest of my fun git aliases
 alias gl='git pull --prune'
@@ -16,6 +17,8 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C
 alias gp='git push origin HEAD'
 alias gd='git diff'
 alias gc='git commit'
+alias gap='git add -p'
+alias gus='git reset HEAD'
 alias gca='git commit -a'
 alias gco='git checkout'
 alias gb='git branch'
