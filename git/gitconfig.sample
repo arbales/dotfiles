@@ -28,6 +28,7 @@
         whitespace = fix
 [github]
         user = arbales
-        token = abcefghijklmnopqrstuvqxyz0123456
+        token = ab132c123a123456a132132ab132ab12
+
 [mergetool]
         keepBackup = false
