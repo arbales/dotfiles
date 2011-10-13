@@ -1,0 +1,34 @@
+#!/bin/zsh
+
+CURRENT_BRANCH=$(/usr/local/bin/git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
+
+can_ff() {
+    a="$(git rev-parse "$1")" &&
+    test "$(git merge-base "$a" "$2")" = "$a"
+}
+
+needs_sync(){
+  a="$(git rev-list --max-count=1 "$1")" &&
+  test "$(git rev-list --max-count=1 "$2")" != "$a"
+}
+
+git fetch --all
+branches=()
+eval "$(git for-each-ref --shell --format='branches+=(%(refname:short))' refs/heads/)"
+
+for branch in "${branches[@]}"; do
+    if (can_ff "$branch" "origin/$branch"); then
+      if (needs_sync "$branch" "origin/$branch"); then
+        echo "\n$branch can be fast-forwarded...."
+        git checkout "$branch"
+        git rebase "origin/$branch"
+      else
+        echo "\n$branch is already up-to-date."
+      fi
+    else
+      echo "\nSkipping $branch..."
+    fi
+done
+
+echo "\nReturning you to $CURRENT_BRANCH..."
+git checkout "$CURRENT_BRANCH"

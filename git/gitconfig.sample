@@ -12,6 +12,7 @@
 [alias]
         co = checkout
         tidy = !$ZSH/bin/git-cleanup-merged-branches
+        bring = !$ZSH/bin/git-bring
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributers = !$ZSH/bin/git-rank-contributers
