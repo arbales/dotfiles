@@ -1,22 +1,15 @@
-# holman did these dotfiles and i'm changing them.
-
 ## dotfiles
+A fork of Holman's
 
 Your dotfiles are how you personalize your system. These are mine. The very
 prejudiced mix: OS X, zsh, Ruby, Rails, git, homebrew, rvm, vim. If you
 match up along most of those lines, you may dig my dotfiles.
 
-I was a little tired of having long alias files and everything strewn about
-(which is extremely common on other dotfiles projects, too). That led to this
-project being much more topic-centric. I realized I could split a lot of things
-up into the main areas I used (Ruby, git, system libraries, and so on), so I
-structured the project accordingly.
-
 If you're interested in the philosophy behind why projects like these are
-awesome, you might want to [read his post on the
+awesome, you might want to read his post on the
 subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
-## install
+## install and use
 
 - `git clone git://github.com/arbales/dotfiles ~/.dotfiles`
 - `cd ~/.dotfiles`
@@ -28,6 +21,9 @@ though.
 
 The main file you'll want to change right off the bat is `zsh/zshrc.symlink`,
 which sets up a few paths that'll be different on your particular machine.
+
+You can easily edit the dotfiles with `dotmate` and easily switch to the
+directory with `dotcd`.
 
 ## topical
 
@@ -50,7 +46,7 @@ browse. A few notable ones:
   next available port- if 3000 is taken, it'll spin up your server on 3001.
 
 ###system
-- `c` is an autocomplete shortcut to your projects directory. For example, `c
+- `c` is an autocomplete shortcut to your Workspace. For example, `c
   git` and then hitting tab will autocomplete to `github`, and then it simply
   changes to my `github` directory.
 - `check [filename]` is a quick script that tells you whether a domain is

@@ -7,7 +7,7 @@
 # can symlink ~/.gitconfig to this file and go rock out with your git out!
 
 [user]
-        name = Austin Bales
+	name = Austin Bales
         email = austin@417east.com
 [alias]
         co = checkout
