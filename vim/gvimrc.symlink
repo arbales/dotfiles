@@ -2,7 +2,7 @@ colorscheme desert
 set anti
 set lines=999 columns=84
 set guioptions=egmrt
-set guifont=Monaco:h13
+set guifont=Inconsolata:h13
 set transparency=10
 " Command + t to :CommandT
 if has("gui_macvim")
