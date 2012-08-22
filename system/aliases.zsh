@@ -8,3 +8,16 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+function spotlight () {
+  if (($# == 0))
+    then echo "spotlight [dir] query";
+  fi
+  if (($# == 2)) then
+    mdfind -onlyin $2 $1
+  else
+    mdfind -onlyin . $1
+  fi
+}
+alias ƒ="spotlight"
+
