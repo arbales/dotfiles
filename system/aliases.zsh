@@ -21,3 +21,6 @@ function spotlight () {
 }
 alias ƒ="spotlight"
 
+function textFind(){
+  mdfind -onlyin . "kMDItemTextContent = '$@'"
+}
