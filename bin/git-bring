@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-CURRENT_BRANCH=$(/usr/local/bin/git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
+CURRENT_BRANCH=$(/usr/bin/git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
 
 can_ff() {
     a="$(git rev-parse "$1")" &&

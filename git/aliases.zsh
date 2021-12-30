@@ -1,7 +1,7 @@
 # Use `hub` as our git wrapper:
 #   http://defunkt.github.com/hub/
 #
-function git(){/usr/local/bin/hub $@}
+# function git(){/usr/local/bin/hub $@}
 
 # The rest of my fun git aliases
 alias gl='git pull --prune'
