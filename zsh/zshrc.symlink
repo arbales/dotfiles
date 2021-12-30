@@ -1,14 +1,14 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
-# start RBENV
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Workspace
 
 # source every .zsh file in this rep
 for config_file ($ZSH/**/*.zsh) source $config_file
+
+# start RBENV
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.

@@ -32,7 +32,7 @@ class Object
 end
 
 def me
-  Member.first(name: 'Austin Bales')
+  Member.first(email: 'arbales@gmail.com')
 end
 
 def r
