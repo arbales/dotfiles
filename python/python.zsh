@@ -1,1 +1,1 @@
-export PATH=":/usr/local/Cellar/python/2.7/bin:$PATH"
+export PATH=":/Users/austin/Library/Python/3.8/bin:$PATH"

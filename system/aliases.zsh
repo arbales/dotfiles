@@ -24,3 +24,4 @@ alias ƒ="spotlight"
 function textFind(){
   mdfind -onlyin . "kMDItemTextContent = '$@'"
 }
+alias atom="pulsar"
