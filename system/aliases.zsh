@@ -20,7 +20,7 @@ function spotlight () {
   fi
 }
 alias ƒ="spotlight"
-# alias npm=yarn
+
 function textFind(){
   mdfind -onlyin . "kMDItemTextContent = '$@'"
 }

@@ -7,3 +7,6 @@ export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 # Homebrew Setup in Opt
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# For Rust
+export PATH="$PATH:$HOME/.cargo/bin"

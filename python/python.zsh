@@ -1,1 +1,2 @@
-export PATH=":/Users/austin/Library/Python/3.8/bin:$PATH"
+# I don't use Python at the moment.
+# export PATH=":/Users/austin/Library/Python/3.8/bin:$PATH"

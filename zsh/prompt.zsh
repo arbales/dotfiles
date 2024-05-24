@@ -40,16 +40,6 @@ need_push () {
   fi
 }
 
-rvm_prompt(){
-  if $(which rvm &> /dev/null)
-  then
-	  echo "%{$fg_bold[yellow]%}$(rvm tools identifier)%{$reset_color%}"
-	else
-	  echo ""
-  fi
-}
-
-
 rb_prompt(){
   if (( $+commands[rbenv] ))
   then
