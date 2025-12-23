@@ -10,3 +10,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # For Rust
 export PATH="$PATH:$HOME/.cargo/bin"
+
+# Local bin
+export PATH="$PATH:$HOME/.local/bin"

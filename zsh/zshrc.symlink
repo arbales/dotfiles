@@ -4,6 +4,8 @@ export ZSH=$HOME/.dotfiles
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Workspace
 
+export EDITOR='zed'
+
 # source every .zsh file in this rep
 for config_file ($ZSH/**/*.zsh) source $config_file
 
@@ -29,3 +31,6 @@ compinit
 
 # load every completion after autocomplete loads
 # for config_file ($ZSH/**/completion.sh) source $config_file
+
+# export STARSHIP_CONFIG=$ZSH/starship/config.toml
+# eval "$(starship init zsh)"

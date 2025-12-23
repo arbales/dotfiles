@@ -20,3 +20,15 @@ end
 def me
   Member.first(email: 'arbales@gmail.com')
 end
+
+def myvc
+  Ent::Privacy::ViewerContext.for_actor(me)
+end
+
+def apvc
+  Ent::Privacy::ViewerContext.all_powerful
+end
+
+def entme
+  EntMember[myvc, me.id]
+end
